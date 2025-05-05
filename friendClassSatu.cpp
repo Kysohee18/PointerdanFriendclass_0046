@@ -34,3 +34,13 @@ void Siswa::setid(int pid) {
     id = pid;
 }
 
+int main() {
+    Orang joko;
+    joko.Setnama("Joko Susilo");
+
+    Siswa joko_siswa;
+    joko_siswa.setid(1);
+    joko_siswa.displayAll(joko);
+
+    return 0;
+}

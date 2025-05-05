@@ -6,11 +6,21 @@ class manusia
 {
 public:
     void showNilaipelajar(pelajar & a);
-    //void shownilai peakar2(pelajar &x)
+    //void shownilai pelajaar2(pelajar &x)
 };
 
 class pelajar
 {
     private:
-    
+    int nilai;
+
+public:
+    pelajar(){nilai = 100;}
+    friend void manusia::showNilaipelajar(pelajar &x);
+
+
+};
+void manusia::showNilaipelajar(pelajar &x)
+{
+    cout <<x.nilai;
 }
